@@ -224,8 +224,7 @@ if __name__ == '__main__':
 
     if USE_GA is True:
         ga = GA(args_GA)
-        #para, mse, duration = ga.executeGA(xvfl)
-        para = np.array([30.51004085,  1.08624567,  7.24089548,  1.80457837,  3.37961181])
+        para, mse, duration = ga.executeGA(xvfl)
         para = {"v0": para[0],
                 "T": para[1],
                 "s0": para[2],
